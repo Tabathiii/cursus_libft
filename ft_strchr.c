@@ -1,3 +1,5 @@
+#include "libft.h"
+
 char	*ft_strchr(const char *s, int c)
 {
 	while (*s != '\0')
@@ -10,3 +12,4 @@ char	*ft_strchr(const char *s, int c)
 		return ((char *)s);
 	return (NULL);
 }
+// 文字の検索（前から）、文字のポインタを返すかNULLか
