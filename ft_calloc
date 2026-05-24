@@ -1,16 +1,18 @@
-void    *ft_calloc(size_t count, size_t size)
-{
-    size_t          i;
-    unsigned char   *memsize;
+#include "libft.h"
 
-    i = 0;
-    if (size != 0 && count > (size_t)-1 / size)
-        return (NULL);
-    memsize = malloc(count * size);
-    if (memsize == NULL)
-        return (NULL);
-    while (i < count * size)
-        memsize[i++] = 0;
-    return (memsize);
+void	*ft_calloc(size_t count, size_t size)
+{
+	size_t			i;
+	unsigned char	*memsize;
+
+	i = 0;
+	if (size != 0 && count > (size_t)-1 / size)
+		return (NULL);
+	memsize = malloc(count * size);
+	if (memsize == NULL)
+		return (NULL);
+	while (i < count * size)
+		memsize[i++] = 0;
+	return (memsize);
 }
 //メモリを1バイトずつ埋めるにはunsigned charを用いるのが鉄則
