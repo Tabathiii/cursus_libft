@@ -1,7 +1,9 @@
+#include "libft.h"
+
 char	*ft_strrchr(const char *s, int c)
 {
 	int	len;
-	
+
 	len = ft_strlen(s);
 	while (len >= 0)
 	{
@@ -11,3 +13,4 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
+// 文字の検索（後ろから）
