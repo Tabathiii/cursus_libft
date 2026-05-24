@@ -1,3 +1,5 @@
+#include "libft.h"
+
 void	*ft_memchr(const void *s, int c, size_t n)
 {
 	const unsigned char	*p;
@@ -15,3 +17,4 @@ void	*ft_memchr(const void *s, int c, size_t n)
 	}
 	return (NULL);
 }
+// 特定のバイト検索（NULLは無視）
