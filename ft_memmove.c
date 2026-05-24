@@ -1,3 +1,5 @@
+#include "libft.h"
+
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
 	unsigned char		*p;
@@ -19,3 +21,6 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
+// メモリ領域コピー（重なり考慮）
+// コピー先のアドレス＞コピー元のアドレス　の時コピーしたい内容が変わる可能性がある。
+// →後ろからコピーしてセグフォを防ぐ
