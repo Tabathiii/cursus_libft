@@ -1,3 +1,5 @@
+#include "libft.h"
+
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	const unsigned char	*p;
@@ -15,3 +17,4 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 	}
 	return (0);
 }
+// メモリ領域比較
